@@ -8,22 +8,17 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Employee {
+public class Students {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String firstname;
 	private String lastname;
-	private String email;
-	private Long contact;
+	private int rollnumber;
+	private String division ;
 	private String Address;
-	public Long getId() {
-		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
-	}
+
 	public String getFirstname() {
 		return firstname;
 	}
@@ -36,17 +31,17 @@ public class Employee {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-	public String getEmail() {
-		return email;
+	public int getRollnumber() {
+		return rollnumber;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setRollnumber(int rollnumber) {
+		this.rollnumber = rollnumber;
 	}
-	public Long getContact() {
-		return contact;
+	public String getDivision() {
+		return division;
 	}
-	public void setContact(Long contact) {
-		this.contact = contact;
+	public void setDivision(String division) {
+		this.division = division;
 	}
 	public String getAddress() {
 		return Address;
@@ -54,7 +49,6 @@ public class Employee {
 	public void setAddress(String address) {
 		Address = address;
 	}
-	
 	
 	
 }
