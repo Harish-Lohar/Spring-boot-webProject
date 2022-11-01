@@ -1,7 +1,10 @@
 package com.mobiloitte.webapp.serviceImpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import com.mobiloitte.webapp.dao.StudentRepository;
 import com.mobiloitte.webapp.dto.StudentDto;
@@ -25,5 +28,14 @@ public class StudentServiceImpl implements StudentService  {
 		return null;
 	}
 
+	@Override
+	public List<Students> getData(Students students) {
+		List<Students> sdtList =studentRepository.findAll();
+		return sdtList;
+	}
+
+	
+
+	
 	
 }
