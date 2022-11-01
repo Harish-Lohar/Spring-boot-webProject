@@ -14,7 +14,7 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService ;
 	
-	@PostMapping("/save")
+	@PostMapping("/savestudent")
 	public String saveStudent(@RequestBody StudentDto studentDto)
 	{
 		studentService.saveStudents(studentDto);
