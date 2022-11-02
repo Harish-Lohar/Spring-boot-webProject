@@ -16,7 +16,8 @@ public class Students {
 	private String firstname;
 	private String lastname;
 	private int rollnumber;
-	private String division ;
+	private String division;
+	private String dob;
 	private String Address;
 
 	public String getFirstname() {
@@ -48,6 +49,12 @@ public class Students {
 	}
 	public void setAddress(String address) {
 		Address = address;
+	}
+	public String getDob() {
+		return dob;
+	}
+	public void setDob(String dob) {
+		this.dob = dob;
 	}
 	
 	

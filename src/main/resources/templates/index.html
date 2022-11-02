@@ -5,17 +5,28 @@
 <title>Registration Form</title>
 </head>
 <body>
-
+<div align="right"><a href="/">- Log-In -</a></div>
 	<div align="center" method="post">
-	<form action="/welcome">
+	<form action="/">
 		<h2>Registration Form</h2>
-		<label> Firstname : </label> <input><br> <br>
-		 <label>
-			Lastname : </label> <input><br> <br> <label> Email
-			: </label> <input><br> <br> <label> Contact : </label> <input><br>
-		<br> <label> Date of Birth : </label> <input><br> <br>
-		<label> Username : </label> <input><br> <br> <label>
-			Password : </label> <input><br> <br>
+		
+		<label> Firstname : </label> 
+		<input name= "firstname"><br> <br>
+		
+		<label>Lastname : </label> 
+		<input name= "lastname"><br> <br> 
+		
+		<label> Roll Number : </label> 
+		<input type="number" name= "rollnumber"><br> <br> 
+		
+		<label> Division : </label> 
+		<input name= "division"><br> <br>
+		
+		<label> Date of Birth : </label> 
+		<input type="date" name= "dob"><br> <br>
+		
+		<label> Address : </label> 
+		<input name= "address"><br> <br> 
 
 		<button type="submit">Register</button>
 		</form>

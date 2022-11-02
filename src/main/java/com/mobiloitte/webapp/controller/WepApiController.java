@@ -12,9 +12,12 @@ public class WepApiController {
 	@Autowired
 	private StudentService studentService;
 	
-	
-	
 	@RequestMapping("/")
+	public String login() {
+		return "login";
+	}
+	
+	@RequestMapping("/index")
 	public String index() {
 //		crudservice.saveUserByHtml(crudDto);
 		return "index";
