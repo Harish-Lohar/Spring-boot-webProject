@@ -18,7 +18,9 @@ public class Students {
 	private int rollnumber;
 	private String division;
 	private String dob;
-	private String Address;
+	private String address;
+	private String username;
+	private String password;
 
 	public String getFirstname() {
 		return firstname;
@@ -35,6 +37,24 @@ public class Students {
 	public int getRollnumber() {
 		return rollnumber;
 	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 	public void setRollnumber(int rollnumber) {
 		this.rollnumber = rollnumber;
 	}
@@ -43,12 +63,6 @@ public class Students {
 	}
 	public void setDivision(String division) {
 		this.division = division;
-	}
-	public String getAddress() {
-		return Address;
-	}
-	public void setAddress(String address) {
-		Address = address;
 	}
 	public String getDob() {
 		return dob;
